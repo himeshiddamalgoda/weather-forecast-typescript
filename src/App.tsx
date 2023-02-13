@@ -12,8 +12,7 @@ const App = (): JSX.Element => {
 
   const getSearchOptions = (value: string) => {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${value.trim()}&limit=5&appid=${
-        process.env.REACT_APP_API_KEY
+      `http://api.openweathermap.org/geo/1.0/direct?q=${value.trim()}&limit=5&appid=e746b0590ae65e507394ab1de88fb8d7
       }`
     )
       .then((res) => res.json())
